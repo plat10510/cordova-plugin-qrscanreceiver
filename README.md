@@ -1,0 +1,2 @@
+# cordvoa-plugin-qrscanreceiver
+通过BroadcastReceiver监听二维码识别获取二维码信息的cordova插件
