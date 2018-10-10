@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-qrscanreceiver",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "通过BroadcastReceiver监听二维码识别获取二维码信息的cordova插件",
   "main": "index.js",
   "scripts": {
