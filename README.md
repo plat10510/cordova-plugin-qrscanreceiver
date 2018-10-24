@@ -15,10 +15,11 @@
 `ionic cordova plugin add cordova-plugin-qrscanreceiver`
 
 ## 用法(Usage)
-`
+
+```
 window.addEventListener("getqrdata", getQRData, false);
 
 function getQRData(data){
   console.log(data.data);
 }
-`
+```
