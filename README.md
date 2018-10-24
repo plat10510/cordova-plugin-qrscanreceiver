@@ -16,10 +16,40 @@
 
 ## 用法(Usage)
 
+### cordova/phonegap项目(in cordova/phonegap)
+
 ```
 window.addEventListener("getqrdata", getQRData, false);
 
 function getQRData(data){
   console.log(data.data);
 }
+```
+
+### ionic3+
+`npm i qrscanreceiver`
+
+添加至module.ts(Add to your app's module)
+```
+import { QRscanreceiver } from 'qrscanreceiver';
+
+...
+providers: [
+    ...
+    QRscanreceiver,
+    ...
+  ]
+...
+```
+
+```
+
+constructor(public navCtrl: NavController,public qrreceiver:QRscanreceiver) {
+
+
+    qrreceiver.onReceiver().subscribe((data:any)=>{
+      console.log(data.data);
+    });
+
+  }
 ```
