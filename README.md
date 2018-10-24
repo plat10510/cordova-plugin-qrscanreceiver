@@ -8,8 +8,17 @@
 
 ## 安装(Installation)
 
-cordova plugin add cordova-plugin-qrscanreceiver
+`cordova plugin add cordova-plugin-qrscanreceiver`
 
 如果是ionic项目则在cordova前加上ionic
 
-ionic cordova plugin add cordova-plugin-qrscanreceiver
+`ionic cordova plugin add cordova-plugin-qrscanreceiver`
+
+## 用法(Usage)
+`
+window.addEventListener("getqrdata", getQRData, false);
+
+function getQRData(data){
+  console.log(data.data);
+}
+`
